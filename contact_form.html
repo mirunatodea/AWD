@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Contact Form</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img.jpg" alt="my image">
+        </div>
+        <h1>Contact Form</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>Contact Form</h2>
+            <form id="emailForm">
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="button" onclick="sendEmail()">Send Email</button>
+            </form>
+
+            <p id="statusMessage"></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Miruna Todea</p>
+    </footer>
+
+    <script>
+        function sendEmail() {
+            // For simplicity, we assume the email is sent successfully
+            document.getElementById('statusMessage').innerText = 'Sent!';
+        }
+    </script>
+</body>
+</html>

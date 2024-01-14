@@ -1,0 +1,186 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    overflow-y: auto;
+}
+
+header {
+    text-align: center;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    background-color: #3498db;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.logo img {
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+nav {
+    background-color: #3498db;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+a:hover {
+    color: #0077cc; 
+}
+
+main section {
+    margin-top: 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: #f2f2f2;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.content-container {
+    max-height: 50vh;
+    overflow-y: auto; 
+    border: 2px solid #3498db;
+    border-radius: 10px;
+    padding: 20px;
+}
+ 
+/* The styles within the media query will be applied for screens that have a width of 480 pixels or less. */
+@media only screen and (max-width: 410px) { 
+    header {
+        padding: 10px;
+    }
+
+    .logo {
+        width: 30px;
+        height: 30px;
+        margin-bottom: 5px;
+    }
+
+    .logo img {
+        width: 80%;
+        height: 80%;
+    }
+
+    h1 {
+        font-size: 12px;
+    }
+
+    h2 {
+        font-size: 12px;
+    }
+
+    h3 {
+        font-size: 12px; 
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    .courses-list li a {
+        font-size: 12px;
+    }
+
+    nav ul {
+        font-size: 12px;
+    }
+
+    nav {
+        padding: 5px;
+    }
+
+    a {
+        padding: 3px;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    address {
+        font-size: 12px;
+        margin-top: 10px;
+    }
+
+    .content-container {
+        padding: 10px;
+    }
+
+    footer {
+        padding: 5px;
+    }
+}
+
+@media only screen and (max-width: 160px) {
+    header {
+        padding: 2px;
+    }
+
+    h1 {
+        font-size: 5px;
+    }
+
+    nav ul {
+        font-size: 5px;
+    }
+
+    nav {
+        padding: 2px;
+    }
+
+    body {
+        font-size: 2px; /* Adjust font size for small screens */
+    }
+
+    footer {
+        font-size: 1px;
+        padding: 1px;
+    }
+
+    button {
+        width: 10px;
+        height: 4px;
+        font-size: 1px;
+    }
+
+    /* Add other styles for small screens */
+}
